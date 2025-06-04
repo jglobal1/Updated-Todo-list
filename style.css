@@ -1,0 +1,97 @@
+/* reset to default */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif; 
+    background-color: #f5f5f5;
+    padding: 20px;
+}
+
+.todo-container{
+    max-width: 500px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.todo-container h1{
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.input-area {
+    display: flex; 
+    margin-bottom: 20px;
+}
+
+#taskInput{
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ddd; 
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+#addTaskBtn{
+    background-color: #4CAF50;
+    padding: 10px 15px;
+    color: white;
+    border:none;
+    border-radius: 4px;
+    margin-left: 10px;
+    cursor: pointer; 
+    transition: background-color 0.3s;
+}
+
+#addTaskBtn:hover {
+    background-color: #45a049;
+}
+
+
+
+/* styling that will be called from javascript */
+
+#taskList{
+    list-style-type: none;
+}
+
+.task-item{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-bottom:1px solid #eee;
+    transition: all 0.3s;
+}
+
+.task-item:hover{
+    background-color: #f9f9f9;
+}
+
+.task-item.completed{
+    text-decoration: line-through; 
+    color: #888;
+}
+
+
+.delete-btn{
+    background-color: #f44336;
+    color:white;
+    border: none;
+    border-radius:4px;
+    padding: 5px 10px;
+    cursor: pointer;
+    transition:background-color 0.3s;
+
+}
+
+.delete-btn:hover {
+    background-color: #d32f2f;
+}
